@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/your-app-name/static/css/main.9c2fd4d6.css",
+    "main.js": "/your-app-name/static/js/main.b5305592.js",
+    "static/media/hangloose.png": "/your-app-name/static/media/hangloose.c731463bcde0fedab614.png",
+    "static/media/labella.png": "/your-app-name/static/media/labella.573ade432488fbca72b1.png",
+    "static/media/seralle.png": "/your-app-name/static/media/seralle.186d5e43f07bbe1b4dba.png",
+    "static/media/santander.png": "/your-app-name/static/media/santander.238b49b81b58441b9337.png",
+    "static/media/acostamento.jpg": "/your-app-name/static/media/acostamento.09a87123562fa66c6b7d.jpg",
+    "static/media/tata.webp": "/your-app-name/static/media/tata.cb43a6edf2966d4209bc.webp",
+    "static/media/logo-grow.png": "/your-app-name/static/media/logo-grow.4af838de843f59fb66fe.png",
+    "static/media/W-Z-logo.svg": "/your-app-name/static/media/W-Z-logo.b461ae9515df29a4cb2d5b1b8b3aced9.svg",
+    "index.html": "/your-app-name/index.html",
+    "main.9c2fd4d6.css.map": "/your-app-name/static/css/main.9c2fd4d6.css.map",
+    "main.b5305592.js.map": "/your-app-name/static/js/main.b5305592.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c2fd4d6.css",
+    "static/js/main.b5305592.js"
+  ]
+}
