@@ -1,0 +1,43 @@
+.imageList {
+    max-width: 440px;
+    width: 100%;
+    padding: 20px;
+    display: block;
+}
+
+.containerImageList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blockImage{
+    max-width: 540px;
+    margin: 20px 10px 20px 10px;
+    position: relative;
+}
+
+.containerImageList img:hover {
+    filter: brightness(0.5);
+}
+
+.imageListText {
+    pointer-events: none;
+    position: absolute;
+    bottom: 90px;
+    z-index: 99;
+    left: 40px;
+    max-width: 80%;
+}
+
+@media(max-width: 668px) {
+    .blockImage{
+        max-width: 240px;
+        margin: 0;
+    }
+
+    .imageList {
+        padding: 0 0 20px 0;
+    }
+}

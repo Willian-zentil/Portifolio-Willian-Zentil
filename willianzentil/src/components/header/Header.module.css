@@ -1,0 +1,25 @@
+.logo {
+    max-width: 100px;
+}
+
+header {
+    padding: 40px;
+}
+
+header div {
+    margin-left: 30px;
+}
+
+header div p {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+@media(max-width: 668px) {
+    .logo{
+        margin: 0 0 40px 0px;
+    }
+    header div {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,15 @@
+.containerLarge {
+    max-width: 1900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media(max-width: 668px) {
+    .containerLarge{
+        justify-content: flex-start;
+    }
+}

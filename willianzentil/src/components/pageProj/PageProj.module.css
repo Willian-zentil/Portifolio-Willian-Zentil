@@ -1,0 +1,12 @@
+.containerProj {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+.container h1 {
+    text-align: center;
+}
