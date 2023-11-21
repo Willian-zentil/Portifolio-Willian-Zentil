@@ -26,6 +26,16 @@
     display: block;
 }
 
+.voltar {
+    color: white;
+    text-align: end;
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+    position: relative;
+    bottom: 30px;
+}
+
 .containerProj a {
     font-weight: bold;
     text-transform: uppercase;

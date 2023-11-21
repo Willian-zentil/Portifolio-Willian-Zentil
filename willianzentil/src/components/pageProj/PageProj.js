@@ -4,8 +4,8 @@ import Background from '../atoms/backGround/Background'
 import styles from './PageProj.module.css'
 
 import seralle from '../../images/seralleSite.png'
-import hangloose from '../../images/hangloose.png'
-import acostamento from '../../images/acostamento.jpg'
+import hangloose from '../../images/hanglooseSite.png'
+import acostamento from '../../images/acostamentoSite.png'
 import labella from '../../images/labellaSite.png'
 import tata from '../../images/tata-site.png'
 import santander from '../../images/santanderSite.png'
@@ -16,7 +16,7 @@ const PROJETOS = [
         image: acostamento,
         alt: "logo loja acostamento",
         title: "LOJA ACOSTAMENTO",
-        text: "Desenvolvimento de páginas de catálogo, página de produto entre outras para o e-commerce da seralle, ",
+        text: "Acostamento foi outras loja de peso que atendi durante grande tempo que passei em uma empresa, fornecendo apoio técnico para as maiorias páginas da loja como checkout (área de pagamento), carrinho de compra, promoções, disposição de produtos, crianção de novas páginas como black friday.",
         link: 'https://www.santander.com.br/hotsite/santanderfinanciamentos/'
     },
     {
@@ -48,7 +48,7 @@ const PROJETOS = [
         image: seralle,
         alt: "logo loja seralle",
         title: "LOJA SERALLE",
-        text: "Prestação de serviço para melhorias da loja, Programação",
+        text: "Ecommerce na área de calçados com inumeras lojas pelo Brasil, fiquei responsavel pela loja e durante esse tempo fiquei atuei na melhoria de de componentes como carrinho de compras, página de produto, homepage da loja entre outros. \n A experiência de trabalhar com uma plataforma nova na epoca foi bem desafiador, mas com a ajuda de colegas e estudando no tempo livre consegui entregar um bom resultado final.",
         link: 'https://www.seralle.com.br/'
     },
     {
@@ -56,18 +56,24 @@ const PROJETOS = [
         image: hangloose,
         alt: "logo loja hangloose",
         title: "LOJA HANGLOOSE",
-        text: "Repaginação do site atual, desenvolvimento pensando na usabilidade do usuário, criação e melhorias de componentes."
+        text: "Hangloose é uma loja do setor de moda, sendo bem diferenciada pelo seu ramo de praia e surf. \n Atuei na manutenção e criação de novos componentes, sendo o único responsavel técnico durante o periodo, passando por epocas críticas de grande volume de acessos como black friday e natal, tudo isso superando os desafios e mantendo o cliente feliz com os resultados entregues.",
+        link: 'https://www.seralle.com.br/'
     },
 ]
 
 function PageProj(props) {
+
+    console.log(localStorage.getItem("mykey"))
+    debugger
+
     return (
         <Background>
             <Header />
             <div className={styles.container}>
                 {PROJETOS.map(item => 
-                1 === item.key &&
+                localStorage.getItem("mykey") == item.key &&
                     <>
+                        <a href='/' className={styles.voltar}>{'voltar'}</a>
                         <h1 className={styles.containerImageList}>{item.title}</h1>
                         <div className={styles.containerProj}>
                             <a href={item.link} target='_blank'><img className={styles.ImageUnique} src={item.image} alt={item.alt} /></a>

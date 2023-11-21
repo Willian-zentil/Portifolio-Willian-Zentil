@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <ContainerLarge>
-        <img src={logo} className={styles.logo} alt='Logo Willian Zentil' />
+        <a href='/'><img src={logo} className={styles.logo} alt='Logo Willian Zentil' /></a>
         <ContainerSmall>
           <div>
             <h1>Willian Zentil</h1>

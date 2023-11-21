@@ -12,7 +12,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<App />} />
-      <Route path="/Projeto" element={<PageProj />} />
+      <Route path="/Projeto" element={<PageProj onKeyProps />} />
     </Routes>
   </BrowserRouter>
 );

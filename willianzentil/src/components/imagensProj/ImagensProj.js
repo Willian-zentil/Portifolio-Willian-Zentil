@@ -57,7 +57,7 @@ const listImages = [
     },
 ]
 
-function ImagensProj(props) {
+function ImagensProj() {
 
     const [imgkey, setIOmgKey] = useState(0)
 
@@ -65,9 +65,10 @@ function ImagensProj(props) {
         debugger
         console.log('key:', param)
         debugger
-        props.onSaveKey(param)
-        window.location = '/Projeto'
+        localStorage.setItem("mykey",param);
+        // window.location = '/Projeto'
     }
+
 
 
 
@@ -75,6 +76,7 @@ function ImagensProj(props) {
         <div className={styles.containerImageList}>
             {listImages.map(item =>
                 <a className={styles.blockImage}
+                    onClick={() => handlerKey(item.key)}
                     onMouseOver={() => setIOmgKey(item.key)} 
                     onMouseOut={() => setIOmgKey(0)} key={item.key}>
                         <img className={styles.imageList} src={item.image} alt={item.alt} />
