@@ -62,11 +62,8 @@ function ImagensProj() {
     const [imgkey, setIOmgKey] = useState(0)
 
     const handlerKey = (param) => {
-        debugger
-        console.log('key:', param)
-        debugger
         localStorage.setItem("mykey",param);
-        // window.location = '/Projeto'
+        window.location = '/Projeto'
     }
 
 

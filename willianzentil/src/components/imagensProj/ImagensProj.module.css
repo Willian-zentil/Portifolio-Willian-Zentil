@@ -16,6 +16,7 @@
     max-width: 540px;
     margin: 20px 10px 20px 10px;
     position: relative;
+    cursor: pointer;
 }
 
 .containerImageList img:hover {

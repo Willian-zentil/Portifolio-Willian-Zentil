@@ -12,7 +12,7 @@ function Header() {
         <ContainerSmall>
           <div>
             <h1>Willian Zentil</h1>
-            <p>Engenheiro de software - Programador no mercado a 5 anos, focado nas principais plaataformas de e-commerce e apaixonado pela área de analise de dados, confira alguns dos projetos que participei! :)</p>
+            <p>Engenheiro de software - Programador no mercado a 5 anos, focado nas principais plataformas de e-commerce e apaixonado pela área de analise de dados, confira alguns dos projetos que participei! :)</p>
           </div>
         </ContainerSmall>
       </ContainerLarge>
