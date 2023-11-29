@@ -11,8 +11,50 @@ header div {
 }
 
 header div p {
-    max-width: 600px;
+    max-width: 520px;
     margin-top: 10px;
+}
+
+.linkWhats {
+    text-decoration: underline;
+    margin-top: 40px;
+    display: block;
+}
+
+.containerSocial {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 140px;
+}
+
+.containerSocial div{
+    margin: 0;
+}
+
+.socialIcons {
+    display: flex;
+}
+
+.socialIcons img {
+    width: 50px;
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+}
+
+.socialIcons a {
+    background-color: white;
+    border-radius: 60px;
+    width: 48px;
+    height: 49PX;
+    position: relative;
+    margin: 20px 10px 0;
+}
+
+.containerSocial p {
+    font-weight: bold;
 }
 
 @media(max-width: 668px) {

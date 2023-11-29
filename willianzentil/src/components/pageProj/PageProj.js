@@ -34,7 +34,7 @@ const PROJETOS = [
         imageMob: labellaMob,
         alt: "logo loja labella",
         title: "LOJA LABELLA LAMAFIA",
-        text: "Durante uma das empresas que passei fiquei encarregado da crianção da página da parceria entre a loja Labella Mafia com a PlayBoy. A plataforma utilizada vtex io para codificação, html css e javascript.\n Álem da página fui responsavel pela estilização de unimeros componentes dentro do site Labella",
+        text: "Durante uma das empresas que passei fiquei encarregado da crianção da página da parceria entre a loja Labella Mafia com a PlayBoy. A plataforma utilizada vtex io para codificação, html css e javascript.\n Álem da página fui responsavel pela estilização de inúmeros componentes dentro do site Labella",
         link: 'https://www.labellamafia.com.br/produtos-playboy'
     },
     {
