@@ -57,16 +57,15 @@ const listImages = [
     },
 ]
 
-function ImagensProj(props) {
+function ImagensProj() {
 
     const [imgkey, setIOmgKey] = useState(0)
 
     const handlerKey = (param) => {
-        console.log('key:', param)
-        localStorage.setItem("mykey", param);
-        props.onSaveKey(param)
+        localStorage.setItem("mykey",param);
         window.location = '/Projeto'
     }
+
 
 
 
@@ -80,11 +79,11 @@ function ImagensProj(props) {
                         onMouseOver={() => setIOmgKey(item.key)}
                         onMouseOut={() => setIOmgKey(0)} key={item.key}>
                         <img className={styles.imageList} src={item.image} alt={item.alt} />
-                        {imgkey == item.key && <div className={styles.imageListText} key={item.key}>
+                        {/* {imgkey == item.key && <div className={styles.imageListText} key={item.key}>
                             <em>{item.title}</em>
                             <p>{item.text}</p>
                         </div>
-                        }
+                        } */}
                     </a>
                 )}
             </div>
