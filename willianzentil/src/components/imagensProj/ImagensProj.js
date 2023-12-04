@@ -62,9 +62,8 @@ function ImagensProj(props) {
     const [imgkey, setIOmgKey] = useState(0)
 
     const handlerKey = (param) => {
-        debugger
         console.log('key:', param)
-        debugger
+        localStorage.setItem("mykey", param);
         props.onSaveKey(param)
         window.location = '/Projeto'
     }
@@ -73,18 +72,22 @@ function ImagensProj(props) {
 
     return (
         <div className={styles.containerImageList}>
-            {listImages.map(item =>
-                <a className={styles.blockImage}
-                    onMouseOver={() => setIOmgKey(item.key)} 
-                    onMouseOut={() => setIOmgKey(0)} key={item.key}>
+            <h3>Confira Alguns dos projetos que participei!</h3>
+            <div>
+                {listImages.map(item =>
+                    <a className={styles.blockImage}
+                        onClick={() => handlerKey(item.key)}
+                        onMouseOver={() => setIOmgKey(item.key)}
+                        onMouseOut={() => setIOmgKey(0)} key={item.key}>
                         <img className={styles.imageList} src={item.image} alt={item.alt} />
-                        {imgkey == item.key  &&  <div className={styles.imageListText} key={item.key}>
+                        {imgkey == item.key && <div className={styles.imageListText} key={item.key}>
                             <em>{item.title}</em>
                             <p>{item.text}</p>
                         </div>
                         }
-                </a>
-            )}
+                    </a>
+                )}
+            </div>
         </div>
     )
 }
