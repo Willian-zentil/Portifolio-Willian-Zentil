@@ -14,7 +14,7 @@
     margin: 20px 0;
 }
 
-.containerImageList div{
+.containerImageList div {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.blockImage{
+.blockImage {
     max-width: 140px;
     margin: 20px 10px 20px 10px;
     position: relative;
@@ -48,12 +48,18 @@
 }
 
 @media(max-width: 668px) {
-    .blockImage{
+    .blockImage {
         max-width: 240px;
         margin: 0;
     }
 
     .imageList {
         padding: 0 0 20px 0;
+    }
+
+
+    .containerImageList h3 {
+        font-size: 20px;
+        margin-left: 40px;
     }
 }

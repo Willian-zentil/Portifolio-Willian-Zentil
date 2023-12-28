@@ -1,8 +1,21 @@
 .fullBanner {
     margin: 0 auto;
-    display: block
+    display: block;
+    max-width: 100%;
 }
 
 .ContainerfullBanner {
     margin-bottom: 80px;
+}
+
+@media(max-width: 992px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media(min-width: 992px) {
+    .mobile {
+        display: none;
+    }
 }
